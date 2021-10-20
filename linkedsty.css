@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 360px;
+    height: 600px;
+    background: grey;
+    box-shadow: 10px 15px 20px rgba(219, 216, 31, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.container h2{
+    color: goldenrod;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.container h2 i{
+    font-size: 1.8rem;
+    padding-left: .1rem;
+    color: #ffffff
+    
+}
+
+.container h1 {
+    color: #fff;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.intro-text p{
+    font-size: .8rem;
+    padding-top: .3rem;
+    color: #fff;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: .7rem;
+}
+
+.input input{
+    width: 100%;
+    height: 50px;
+    padding-top: 1.1rem;
+    padding-left: 9px;
+    outline: none;
+    border: 1px solid #8c8c8c;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.input label{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    font-size: 1.1rem;
+    color: #8c8c8c;
+    transition: .2s;
+}
+
+.input input:focus ~ label, 
+.input input:valid ~ label{
+    top: 10%;
+    font-size: .8rem;
+    color: goldenrod;
+}
+
+.input input:focus{
+    border-width: 2px;
+    border-color: goldenrod;
+}
+
+.forget-pass-link{
+    width: 140px;
+    padding: .2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+    transition: .3s;
+    border-radius: 12px;
+}
+
+.forget-pass-link:hover{
+    background: goldenrod;
+}
+
+button{
+    height: 50px;
+    background-color: goldenrod;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.join-link{
+    text-align: center;
+    color: #fff;
+}
+
+.join-link a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: goldenrod;
+}
